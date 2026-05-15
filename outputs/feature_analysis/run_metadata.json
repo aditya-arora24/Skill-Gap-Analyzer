@@ -1,0 +1,143 @@
+{
+  "random_seed": 42,
+  "n_train": 600,
+  "n_test": 100,
+  "test_threshold": 0.52,
+  "test_f1_full": 0.7692,
+  "n_permutations": 50,
+  "sbert_only_f1": 0.6275,
+  "skill_only_f1": 0.7059,
+  "lift_over_sbert": 0.1417,
+  "lift_over_skill_only": 0.0633,
+  "coefficients": [
+    {
+      "feature": "embedding_similarity",
+      "coef": 0.979,
+      "abs_coef": 0.979
+    },
+    {
+      "feature": "skill_overlap",
+      "coef": 0.7163,
+      "abs_coef": 0.7163
+    },
+    {
+      "feature": "num_missing_skills",
+      "coef": -0.6994,
+      "abs_coef": 0.6994
+    },
+    {
+      "feature": "weighted_skill_score",
+      "coef": -0.6965,
+      "abs_coef": 0.6965
+    },
+    {
+      "feature": "tfidf_similarity",
+      "coef": 0.5605,
+      "abs_coef": 0.5605
+    },
+    {
+      "feature": "title_similarity",
+      "coef": 0.4972,
+      "abs_coef": 0.4972
+    },
+    {
+      "feature": "avg_missing_skill_importance",
+      "coef": -0.2789,
+      "abs_coef": 0.2789
+    },
+    {
+      "feature": "years_of_experience",
+      "coef": 0.0039,
+      "abs_coef": 0.0039
+    }
+  ],
+  "permutation_importance": [
+    {
+      "feature": "embedding_similarity",
+      "mean_f1_drop": 0.2503,
+      "std_f1_drop": 0.0691
+    },
+    {
+      "feature": "title_similarity",
+      "mean_f1_drop": 0.1184,
+      "std_f1_drop": 0.0455
+    },
+    {
+      "feature": "num_missing_skills",
+      "mean_f1_drop": 0.1048,
+      "std_f1_drop": 0.0382
+    },
+    {
+      "feature": "tfidf_similarity",
+      "mean_f1_drop": 0.0853,
+      "std_f1_drop": 0.0427
+    },
+    {
+      "feature": "skill_overlap",
+      "mean_f1_drop": 0.0707,
+      "std_f1_drop": 0.0389
+    },
+    {
+      "feature": "weighted_skill_score",
+      "mean_f1_drop": 0.0529,
+      "std_f1_drop": 0.0368
+    },
+    {
+      "feature": "avg_missing_skill_importance",
+      "mean_f1_drop": 0.0109,
+      "std_f1_drop": 0.0179
+    },
+    {
+      "feature": "years_of_experience",
+      "mean_f1_drop": 0.0,
+      "std_f1_drop": 0.0
+    }
+  ],
+  "ablation": [
+    {
+      "dropped_feature": "title_similarity",
+      "test_f1": 0.6531,
+      "f1_drop": 0.1161
+    },
+    {
+      "dropped_feature": "num_missing_skills",
+      "test_f1": 0.6809,
+      "f1_drop": 0.0883
+    },
+    {
+      "dropped_feature": "embedding_similarity",
+      "test_f1": 0.7059,
+      "f1_drop": 0.0633
+    },
+    {
+      "dropped_feature": "tfidf_similarity",
+      "test_f1": 0.7347,
+      "f1_drop": 0.0345
+    },
+    {
+      "dropped_feature": "(none \u2014 full 8 features)",
+      "test_f1": 0.7692,
+      "f1_drop": 0.0
+    },
+    {
+      "dropped_feature": "years_of_experience",
+      "test_f1": 0.7692,
+      "f1_drop": 0.0
+    },
+    {
+      "dropped_feature": "avg_missing_skill_importance",
+      "test_f1": 0.7755,
+      "f1_drop": -0.0063
+    },
+    {
+      "dropped_feature": "weighted_skill_score",
+      "test_f1": 0.7843,
+      "f1_drop": -0.0151
+    },
+    {
+      "dropped_feature": "skill_overlap",
+      "test_f1": 0.8163,
+      "f1_drop": -0.0471
+    }
+  ]
+}

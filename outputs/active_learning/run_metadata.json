@@ -1,0 +1,55 @@
+{
+  "random_seed": 42,
+  "n_active_labels": 200,
+  "active_unanimous": 86,
+  "active_disputed": 114,
+  "active_positive_rate": 0.195,
+  "pairwise_agreement": {
+    "claude_gpt": 0.47,
+    "claude_gemini": 0.87,
+    "gpt_gemini": 0.52,
+    "mean": 0.62
+  },
+  "n_combined_train": 600,
+  "old_threshold": 0.5,
+  "old_cv_f1": 0.6311,
+  "new_threshold": 0.52,
+  "new_cv_f1": 0.5443,
+  "old_test_metrics": {
+    "Approach": "Supervised (400 gold)",
+    "Threshold": 0.5,
+    "Accuracy": 0.84,
+    "Precision": 0.5938,
+    "Recall": 0.8636,
+    "F1": 0.7037,
+    "P@5": 1.0,
+    "P@10": 0.8,
+    "P@20": 0.7
+  },
+  "al_test_metrics": {
+    "Approach": "Active learning (600)",
+    "Threshold": 0.52,
+    "Accuracy": 0.88,
+    "Precision": 0.6667,
+    "Recall": 0.9091,
+    "F1": 0.7692,
+    "P@5": 1.0,
+    "P@10": 0.9,
+    "P@20": 0.7
+  },
+  "n_flipped": 6,
+  "n_now_correct": 5,
+  "n_now_wrong": 1,
+  "active_label_source_distribution": {
+    "B_xcat": 50,
+    "A_mid": 50,
+    "topK": 50,
+    "C_rand": 50
+  },
+  "active_label_positive_by_source": {
+    "A_mid": 0.18,
+    "B_xcat": 0.16,
+    "C_rand": 0.14,
+    "topK": 0.3
+  }
+}

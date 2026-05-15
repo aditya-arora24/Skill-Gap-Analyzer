@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Career Path Dashboard — Demo</title>
+
+    <style>
+      :root {
+        --bg: #0f172a; --card: #1e293b; --border: #334155;
+        --text: #e2e8f0; --muted: #94a3b8;
+        --accent: #10b981; --warn: #f59e0b; --danger: #ef4444;
+        --good: #22c55e; --bar-bg: #334155;
+      }
+      body {
+        margin: 0; padding: 32px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                     Roboto, Helvetica, Arial, sans-serif;
+        background: var(--bg); color: var(--text); line-height: 1.5;
+        max-width: 1100px; margin-inline: auto;
+      }
+      h1 { font-size: 26px; margin: 0 0 4px 0; }
+      h2 { font-size: 18px; margin: 0 0 12px 0; color: var(--muted);
+           text-transform: uppercase; letter-spacing: 0.5px; }
+      .subtitle { color: var(--muted); font-size: 14px; margin: 0 0 28px 0; }
+      .card {
+        background: var(--card); border: 1px solid var(--border);
+        border-radius: 12px; padding: 24px; margin-bottom: 20px;
+      }
+      .row { display: flex; gap: 32px; align-items: flex-start; }
+      .col { flex: 1; }
+      .score-num {
+        font-size: 56px; font-weight: 700; color: var(--accent);
+        line-height: 1; margin: 8px 0 4px 0;
+      }
+      .score-bar-bg {
+        background: var(--bar-bg); height: 14px; border-radius: 7px;
+        overflow: hidden; margin: 8px 0;
+      }
+      .score-bar-fg {
+        height: 100%; background: linear-gradient(90deg, #10b981, #34d399);
+        border-radius: 7px;
+      }
+      .percentile { color: var(--muted); font-size: 13px; }
+      .skill-list { list-style: none; padding: 0; margin: 0; }
+      .skill-list li {
+        padding: 8px 0; border-bottom: 1px solid var(--border);
+        display: flex; justify-content: space-between; align-items: center;
+      }
+      .skill-list li:last-child { border-bottom: none; }
+      .check { color: var(--good); margin-right: 10px; }
+      .warn  { color: var(--warn); margin-right: 10px; }
+      .stars { color: var(--warn); font-size: 13px; letter-spacing: 1px; }
+      .imp-val { color: var(--muted); font-size: 12px; margin-left: 8px; }
+      .roadmap-bucket { margin-bottom: 16px; padding: 14px;
+                        border-left: 3px solid var(--accent); background: #0f172a; }
+      .roadmap-bucket .title { font-weight: 600; }
+      .roadmap-bucket .label { color: var(--muted); font-size: 13px;
+                                margin-bottom: 8px; }
+      .roadmap-bucket ul { margin: 6px 0 0 18px; padding: 0; }
+      .roadmap-bucket li { padding: 4px 0; }
+      .freq-tag {
+        font-size: 11px; color: var(--muted);
+        background: var(--bar-bg); padding: 2px 6px; border-radius: 4px;
+        margin-left: 6px;
+      }
+      .fsim-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+                   gap: 8px 16px; align-items: center; font-size: 13px; }
+      .fsim-grid .head { color: var(--muted); font-size: 12px;
+                         text-transform: uppercase; letter-spacing: 0.3px;
+                         border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+      .delta-up { color: var(--good); font-weight: 600; }
+      .footer { color: var(--muted); font-size: 12px; margin-top: 24px;
+                text-align: center; }
+      .meta { color: var(--muted); font-size: 13px; }
+    </style>
+    
+</head><body>
+    <h1>Career Path Dashboard</h1>
+    <p class="subtitle">
+      Personalized job-fit scoring &amp; skill-gap diagnostic
+      &nbsp;·&nbsp; demo for resume #331 (INFORMATION-TECHNOLOGY)
+    </p>
+
+    <!-- SECTION 1: Match score -->
+    <div class="card">
+      <h2>Section 1 · Top Match</h2>
+      <div class="row">
+        <div class="col">
+          <div class="meta">Top matched job</div>
+          <div style="font-weight:600; font-size:18px; margin-top:4px;">
+            Supply Chain Analyst
+          </div>
+          <div class="meta" style="margin-top:4px;">Texas Children's Hospital</div>
+          <div class="score-num">91%</div>
+          <div class="score-bar-bg"><div class="score-bar-fg"
+               style="width:91%"></div></div>
+          <div class="percentile">
+            Top 7% of candidates for this role
+            &nbsp;·&nbsp; Threshold for "match": 52%
+          </div>
+        </div>
+        <div class="col">
+          <div class="meta">Model confidence framing</div>
+          <p style="margin: 8px 0;">
+            On comparable gold-set pairs, 3 LLM judges
+            (Claude / GPT / Gemini) agreed unanimously
+            71% of the time and reached majority
+            consensus on 100%. The score above
+            reflects this calibrated reranker.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: Skill gap -->
+    <div class="card">
+      <h2>Section 2 · Skill Gap Report</h2>
+      <div class="row">
+        <div class="col">
+          <div class="meta">Skills you have <strong>(2/6)</strong></div>
+          <ul class="skill-list" style="margin-top:10px;"><li><span><span class="check">✓</span>integrity</span><span class="stars">★★★★▫</span></li><li><span><span class="check">✓</span>coordination</span><span class="stars">★★▫▫▫</span></li></ul>
+        </div>
+        <div class="col">
+          <div class="meta">Skills you're missing <strong>(4)</strong>
+            <span style="color:var(--muted)">— sorted by ESCO importance</span></div>
+          <ul class="skill-list" style="margin-top:10px;"><li><span><span class="warn">⚠</span>medicine</span><span class="stars">★★★★★<span class="imp-val">5.0/5</span></span></li><li><span><span class="warn">⚠</span>primary care</span><span class="stars">★★★★★<span class="imp-val">5.0/5</span></span></li><li><span><span class="warn">⚠</span>root cause analysis</span><span class="stars">★★★★★<span class="imp-val">5.0/5</span></span></li><li><span><span class="warn">⚠</span>source</span><span class="stars">★★★★★<span class="imp-val">5.0/5</span></span></li></ul>
+        </div>
+      </div>
+      <div class="meta" style="margin-top:16px;">
+        Top two missing skills account for
+        <strong style="color:var(--text)">50%</strong>
+        of the total gap importance — focus there.
+      </div>
+    </div>
+
+    <!-- SECTION 3: Roadmap -->
+    <div class="card">
+      <h2>Section 3 · 2-Year Skill Roadmap</h2>
+      <div class="meta" style="margin-bottom:14px;">
+        Aggregated across your top 5 matched jobs, ranked by
+        (frequency × importance). Buckets are suggested timelines, not strict
+        deadlines.
+      </div>
+      
+        <div class="roadmap-bucket">
+          <div class="title">Year 1 · Q1–Q2 — Foundation</div>
+          <div class="label">Highest frequency × importance — your biggest gaps.</div>
+          <ul><li>source <span class="freq-tag">appears in 3/5 target jobs</span> <span class="stars">★★★★★</span></li><li>energy <span class="freq-tag">appears in 3/5 target jobs</span> <span class="stars">★★★★★</span></li></ul>
+        </div>
+        
+        <div class="roadmap-bucket">
+          <div class="title">Year 1 · Q3–Q4 — Specialization</div>
+          <div class="label">Builds on the Q1–Q2 foundation; medium-impact gaps.</div>
+          <ul><li>medicine <span class="freq-tag">appears in 1/5 target jobs</span> <span class="stars">★★★★★</span></li><li>primary care <span class="freq-tag">appears in 1/5 target jobs</span> <span class="stars">★★★★★</span></li></ul>
+        </div>
+        
+        <div class="roadmap-bucket">
+          <div class="title">Year 2 · Q1–Q2 — Advanced topics</div>
+          <div class="label">Advanced topics relevant to a subset of your target jobs.</div>
+          <ul><li>root cause analysis <span class="freq-tag">appears in 1/5 target jobs</span> <span class="stars">★★★★★</span></li><li>job opportunities <span class="freq-tag">appears in 1/5 target jobs</span> <span class="stars">★★★★★</span></li></ul>
+        </div>
+        
+        <div class="roadmap-bucket">
+          <div class="title">Year 2 · Q3–Q4 — Differentiation</div>
+          <div class="label">Soft skills &amp; portfolio building — differentiation.</div>
+          <ul><li>pregnancy <span class="freq-tag">appears in 1/5 target jobs</span> <span class="stars">★★★★★</span></li><li>call <span class="freq-tag">appears in 1/5 target jobs</span> <span class="stars">★★★★★</span></li></ul>
+        </div>
+        
+    </div>
+
+    <!-- SECTION 4: Forward simulation -->
+    <div class="card">
+      <h2>Section 4 · Forward Simulation — what learning these skills does</h2>
+      <p class="meta" style="margin-top:0;">
+        If you add the Q1–Q2 foundation skills
+        (<strong>source, energy</strong>) to your profile, the
+        model re-scores you against your top-5 jobs as follows:
+      </p>
+      <div class="fsim-grid">
+        <div class="head">Target job</div>
+        <div class="head">Before</div>
+        <div class="head">After</div>
+        <div class="head">Delta</div>
+        
+        <div>Supply Chain Analyst</div>
+        <div>91%</div>
+        <div class="delta-up">→ 92%</div>
+        <div class="delta-up">+1 pts</div>
+        
+        <div>Accounting Clerk</div>
+        <div>83%</div>
+        <div class="delta-up">→ 93%</div>
+        <div class="delta-up">+9 pts</div>
+        
+        <div>Supply Chain Analyst - Senior</div>
+        <div>78%</div>
+        <div class="delta-up">→ 84%</div>
+        <div class="delta-up">+6 pts</div>
+        
+        <div>Supply Chain Analyst</div>
+        <div>58%</div>
+        <div class="delta-up">→ 66%</div>
+        <div class="delta-up">+8 pts</div>
+        
+        <div>Chief Executive Officer - CEO Consultant</div>
+        <div>46%</div>
+        <div class="delta-up">→ 46%</div>
+        <div class="delta-up">+0 pts</div>
+        
+      </div>
+      <p class="meta" style="margin-top:14px;">
+        Average match score: <strong style="color:var(--text)">
+        71% → 76%</strong>
+        (+5 points).
+        Computed by toggling the proposed skills in your `extracted_skills`
+        set and re-running the trained model — same logic that produced the
+        F1=0.769 reranker result.
+      </p>
+    </div>
+
+    <p class="footer">
+      Prototype generated by build_dashboard_demo.py.
+      Backed by the active-learning reranker (LogReg, 600 LLM-labeled pairs, F1=0.769).
+      Web frontend, user accounts, and learning-platform integrations are future work.
+    </p>
+    </body></html>

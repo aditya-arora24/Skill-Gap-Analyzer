@@ -1,0 +1,19 @@
+# Ignore large datasets
+data/raw/
+data/processed/
+
+# Ignore trained models
+models/
+*.pkl
+*.joblib
+
+# Python cache
+__pycache__/
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node dependencies
+node_modules/

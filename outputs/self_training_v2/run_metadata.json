@@ -1,0 +1,51 @@
+{
+  "random_seed": 42,
+  "test_fraction": 0.2,
+  "top_percentile": 0.05,
+  "bottom_percentile": 0.05,
+  "n_pool": 50150,
+  "n_pool_dropped_gold": 500,
+  "n_top": 2508,
+  "n_bot": 2508,
+  "n_pseudo": 5016,
+  "n_combined": 5416,
+  "old_threshold": 0.5,
+  "old_cv_f1": 0.6311,
+  "new_threshold": 0.64,
+  "new_cv_f1": 0.9867,
+  "old_test_metrics": {
+    "Approach": "Supervised (baseline)",
+    "Threshold": 0.5,
+    "Accuracy": 0.84,
+    "Precision": 0.5938,
+    "Recall": 0.8636,
+    "F1": 0.7037,
+    "P@5": 1.0,
+    "P@10": 0.8,
+    "P@20": 0.7
+  },
+  "v2_test_metrics": {
+    "Approach": "Self-trained v2 (fixed)",
+    "Threshold": 0.64,
+    "Accuracy": 0.84,
+    "Precision": 0.6875,
+    "Recall": 0.5,
+    "F1": 0.5789,
+    "P@5": 1.0,
+    "P@10": 0.9,
+    "P@20": 0.7
+  },
+  "n_flipped": 16,
+  "n_now_correct": 8,
+  "n_now_wrong": 8,
+  "train_accuracy_old": 0.7975,
+  "train_accuracy_new": 0.8225,
+  "train_f1_old": 0.6462882096069869,
+  "train_f1_new": 0.5534591194968553,
+  "pseudo_label_source_distribution": {
+    "topK": 2844,
+    "A_mid": 1769,
+    "C_rand": 309,
+    "B_xcat": 94
+  }
+}

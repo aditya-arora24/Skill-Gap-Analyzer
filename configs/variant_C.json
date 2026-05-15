@@ -1,0 +1,29 @@
+{
+  "variant_name": "C",
+  "description": "No holdout (DIAGNOSTIC ONLY). Label = same composite as A: 0.4*emb + 0.3*wss + 0.2*title + 0.1*edu. Train on ALL 11 features including the four label features. This is a leakage-tainted upper bound; it quantifies how much the leakage discipline costs us. NOT for primary reporting.",
+  "label_weights": {
+    "embedding_similarity": 0.4,
+    "weighted_skill_score":  0.3,
+    "title_similarity":      0.2,
+    "education_match":       0.1
+  },
+  "label_quantiles": {
+    "high_pct": 0.70,
+    "low_pct":  0.30
+  },
+  "holdout_features": [],
+  "training_features": [
+    "embedding_similarity",
+    "tfidf_similarity",
+    "skill_overlap",
+    "weighted_skill_score",
+    "num_missing_skills",
+    "avg_missing_skill_importance",
+    "years_of_experience",
+    "experience_gap",
+    "experience_relevance_score",
+    "title_similarity",
+    "education_match"
+  ],
+  "random_state": 42
+}

@@ -1,0 +1,298 @@
+{
+  "reading comprehension": [
+    "Analyzing Data or Information",
+    "Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",
+    "Evaluating Information to Determine Compliance with Standards",
+    "Getting Information",
+    "Identifying Objects, Actions, and Events",
+    "Interpreting the Meaning of Information for Others",
+    "Judging the Qualities of Objects, Services, or People",
+    "Making Decisions and Solving Problems",
+    "Monitoring Processes, Materials, or Surroundings",
+    "Performing Administrative Activities",
+    "Processing Information",
+    "Providing Consultation and Advice to Others",
+    "Training and Teaching Others",
+    "Updating and Using Relevant Knowledge",
+    "Working with Computers"
+  ],
+  "active listening": [
+    "Assisting and Caring for Others",
+    "Coaching and Developing Others",
+    "Communicating with People Outside the Organization",
+    "Communicating with Supervisors, Peers, or Subordinates",
+    "Coordinating the Work and Activities of Others",
+    "Developing and Building Teams",
+    "Establishing and Maintaining Interpersonal Relationships",
+    "Getting Information",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Identifying Objects, Actions, and Events",
+    "Interpreting the Meaning of Information for Others",
+    "Making Decisions and Solving Problems",
+    "Monitoring Processes, Materials, or Surroundings",
+    "Performing for or Working Directly with the Public",
+    "Providing Consultation and Advice to Others",
+    "Resolving Conflicts and Negotiating with Others",
+    "Selling or Influencing Others",
+    "Staffing Organizational Units",
+    "Training and Teaching Others",
+    "Updating and Using Relevant Knowledge"
+  ],
+  "writing": [
+    "Communicating with People Outside the Organization",
+    "Communicating with Supervisors, Peers, or Subordinates",
+    "Developing Objectives and Strategies",
+    "Documenting/Recording Information",
+    "Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Interpreting the Meaning of Information for Others",
+    "Performing Administrative Activities",
+    "Providing Consultation and Advice to Others",
+    "Training and Teaching Others"
+  ],
+  "speaking": [
+    "Assisting and Caring for Others",
+    "Coaching and Developing Others",
+    "Communicating with People Outside the Organization",
+    "Communicating with Supervisors, Peers, or Subordinates",
+    "Coordinating the Work and Activities of Others",
+    "Developing Objectives and Strategies",
+    "Developing and Building Teams",
+    "Establishing and Maintaining Interpersonal Relationships",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Interpreting the Meaning of Information for Others",
+    "Performing for or Working Directly with the Public",
+    "Providing Consultation and Advice to Others",
+    "Resolving Conflicts and Negotiating with Others",
+    "Selling or Influencing Others",
+    "Staffing Organizational Units",
+    "Training and Teaching Others"
+  ],
+  "mathematics": [
+    "Estimating the Quantifiable Characteristics of Products, Events, or Information",
+    "Processing Information"
+  ],
+  "critical thinking": [
+    "Analyzing Data or Information",
+    "Coaching and Developing Others",
+    "Coordinating the Work and Activities of Others",
+    "Developing Objectives and Strategies",
+    "Developing and Building Teams",
+    "Estimating the Quantifiable Characteristics of Products, Events, or Information",
+    "Evaluating Information to Determine Compliance with Standards",
+    "Getting Information",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Identifying Objects, Actions, and Events",
+    "Inspecting Equipment, Structures, or Materials",
+    "Interpreting the Meaning of Information for Others",
+    "Making Decisions and Solving Problems",
+    "Monitoring Processes, Materials, or Surroundings",
+    "Monitoring and Controlling Resources",
+    "Organizing, Planning, and Prioritizing Work",
+    "Providing Consultation and Advice to Others",
+    "Repairing and Maintaining Electronic Equipment",
+    "Repairing and Maintaining Mechanical Equipment",
+    "Resolving Conflicts and Negotiating with Others",
+    "Scheduling Work and Activities",
+    "Staffing Organizational Units",
+    "Thinking Creatively",
+    "Training and Teaching Others",
+    "Working with Computers"
+  ],
+  "active learning": [
+    "Guiding, Directing, and Motivating Subordinates",
+    "Making Decisions and Solving Problems",
+    "Resolving Conflicts and Negotiating with Others",
+    "Training and Teaching Others",
+    "Updating and Using Relevant Knowledge"
+  ],
+  "learning strategies": [
+    "Coaching and Developing Others",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Training and Teaching Others",
+    "Updating and Using Relevant Knowledge"
+  ],
+  "monitoring": [
+    "Assisting and Caring for Others",
+    "Coaching and Developing Others",
+    "Coordinating the Work and Activities of Others",
+    "Developing and Building Teams",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Judging the Qualities of Objects, Services, or People",
+    "Monitoring Processes, Materials, or Surroundings",
+    "Monitoring and Controlling Resources",
+    "Providing Consultation and Advice to Others",
+    "Resolving Conflicts and Negotiating with Others",
+    "Selling or Influencing Others",
+    "Staffing Organizational Units",
+    "Training and Teaching Others"
+  ],
+  "social perceptiveness": [
+    "Assisting and Caring for Others",
+    "Coaching and Developing Others",
+    "Communicating with People Outside the Organization",
+    "Coordinating the Work and Activities of Others",
+    "Developing and Building Teams",
+    "Establishing and Maintaining Interpersonal Relationships",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Interpreting the Meaning of Information for Others",
+    "Performing for or Working Directly with the Public",
+    "Providing Consultation and Advice to Others",
+    "Resolving Conflicts and Negotiating with Others",
+    "Selling or Influencing Others",
+    "Staffing Organizational Units",
+    "Training and Teaching Others"
+  ],
+  "coordination": [
+    "Assisting and Caring for Others",
+    "Coaching and Developing Others",
+    "Coordinating the Work and Activities of Others",
+    "Developing and Building Teams",
+    "Establishing and Maintaining Interpersonal Relationships",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Performing for or Working Directly with the Public",
+    "Providing Consultation and Advice to Others",
+    "Resolving Conflicts and Negotiating with Others",
+    "Scheduling Work and Activities",
+    "Selling or Influencing Others",
+    "Training and Teaching Others"
+  ],
+  "persuasion": [
+    "Coaching and Developing Others",
+    "Communicating with People Outside the Organization",
+    "Coordinating the Work and Activities of Others",
+    "Developing and Building Teams",
+    "Establishing and Maintaining Interpersonal Relationships",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Providing Consultation and Advice to Others",
+    "Resolving Conflicts and Negotiating with Others",
+    "Selling or Influencing Others",
+    "Staffing Organizational Units"
+  ],
+  "negotiation": [
+    "Coordinating the Work and Activities of Others",
+    "Developing and Building Teams",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Resolving Conflicts and Negotiating with Others",
+    "Staffing Organizational Units"
+  ],
+  "instructing": [
+    "Coaching and Developing Others",
+    "Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Interpreting the Meaning of Information for Others",
+    "Providing Consultation and Advice to Others",
+    "Training and Teaching Others"
+  ],
+  "service orientation": [
+    "Assisting and Caring for Others",
+    "Coaching and Developing Others",
+    "Communicating with People Outside the Organization",
+    "Coordinating the Work and Activities of Others",
+    "Developing and Building Teams",
+    "Establishing and Maintaining Interpersonal Relationships",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Performing for or Working Directly with the Public",
+    "Providing Consultation and Advice to Others",
+    "Resolving Conflicts and Negotiating with Others",
+    "Selling or Influencing Others",
+    "Training and Teaching Others"
+  ],
+  "complex problem solving": [
+    "Developing Objectives and Strategies",
+    "Making Decisions and Solving Problems",
+    "Monitoring and Controlling Resources",
+    "Organizing, Planning, and Prioritizing Work",
+    "Providing Consultation and Advice to Others",
+    "Repairing and Maintaining Electronic Equipment",
+    "Repairing and Maintaining Mechanical Equipment",
+    "Working with Computers"
+  ],
+  "technology design": [
+    "Thinking Creatively"
+  ],
+  "equipment selection": [
+    "Repairing and Maintaining Electronic Equipment",
+    "Repairing and Maintaining Mechanical Equipment"
+  ],
+  "programming": [
+    "Working with Computers"
+  ],
+  "operations monitoring": [
+    "Controlling Machines and Processes",
+    "Inspecting Equipment, Structures, or Materials",
+    "Monitoring Processes, Materials, or Surroundings",
+    "Operating Vehicles, Mechanized Devices, or Equipment",
+    "Repairing and Maintaining Electronic Equipment",
+    "Repairing and Maintaining Mechanical Equipment"
+  ],
+  "operation and control": [
+    "Controlling Machines and Processes",
+    "Operating Vehicles, Mechanized Devices, or Equipment"
+  ],
+  "equipment maintenance": [
+    "Repairing and Maintaining Electronic Equipment",
+    "Repairing and Maintaining Mechanical Equipment"
+  ],
+  "troubleshooting": [
+    "Inspecting Equipment, Structures, or Materials",
+    "Repairing and Maintaining Electronic Equipment",
+    "Repairing and Maintaining Mechanical Equipment"
+  ],
+  "repairing": [
+    "Repairing and Maintaining Electronic Equipment",
+    "Repairing and Maintaining Mechanical Equipment"
+  ],
+  "quality control analysis": [
+    "Inspecting Equipment, Structures, or Materials",
+    "Repairing and Maintaining Electronic Equipment",
+    "Repairing and Maintaining Mechanical Equipment"
+  ],
+  "judgment and decision making": [
+    "Developing Objectives and Strategies",
+    "Estimating the Quantifiable Characteristics of Products, Events, or Information",
+    "Making Decisions and Solving Problems",
+    "Monitoring and Controlling Resources",
+    "Organizing, Planning, and Prioritizing Work",
+    "Providing Consultation and Advice to Others",
+    "Staffing Organizational Units",
+    "Training and Teaching Others"
+  ],
+  "systems analysis": [
+    "Developing Objectives and Strategies",
+    "Organizing, Planning, and Prioritizing Work",
+    "Providing Consultation and Advice to Others",
+    "Working with Computers"
+  ],
+  "systems evaluation": [
+    "Developing Objectives and Strategies",
+    "Making Decisions and Solving Problems",
+    "Providing Consultation and Advice to Others"
+  ],
+  "time management": [
+    "Coordinating the Work and Activities of Others",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Organizing, Planning, and Prioritizing Work",
+    "Performing Administrative Activities",
+    "Scheduling Work and Activities",
+    "Updating and Using Relevant Knowledge"
+  ],
+  "management of financial resources": [
+    "Estimating the Quantifiable Characteristics of Products, Events, or Information",
+    "Monitoring and Controlling Resources"
+  ],
+  "management of material resources": [
+    "Estimating the Quantifiable Characteristics of Products, Events, or Information",
+    "Monitoring and Controlling Resources"
+  ],
+  "management of personnel resources": [
+    "Coaching and Developing Others",
+    "Coordinating the Work and Activities of Others",
+    "Developing and Building Teams",
+    "Guiding, Directing, and Motivating Subordinates",
+    "Monitoring and Controlling Resources",
+    "Scheduling Work and Activities",
+    "Staffing Organizational Units",
+    "Training and Teaching Others"
+  ]
+}

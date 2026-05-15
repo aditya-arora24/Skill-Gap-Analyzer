@@ -1,0 +1,10 @@
+dropped_feature,test_f1,f1_drop
+title_similarity,0.6531,0.1161
+num_missing_skills,0.6809,0.0883
+embedding_similarity,0.7059,0.0633
+tfidf_similarity,0.7347,0.0345
+(none — full 8 features),0.7692,0.0
+years_of_experience,0.7692,0.0
+avg_missing_skill_importance,0.7755,-0.0063
+weighted_skill_score,0.7843,-0.0151
+skill_overlap,0.8163,-0.0471

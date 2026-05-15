@@ -1,0 +1,292 @@
+{
+  "programming": {
+    "context_features": [],
+    "importance_mean": 1.6055480984340043,
+    "level_mean": 0.831006711409396
+  },
+  "service orientation": {
+    "context_features": [
+      "Coordinate or Lead Others in Accomplishing Work Activities",
+      "Deal With External Customers or the Public in General",
+      "Dealing With Unpleasant, Angry, or Discourteous People"
+    ],
+    "importance_mean": 2.947326621923937,
+    "level_mean": 2.863020134228188
+  },
+  "persuasion": {
+    "context_features": [
+      "Conflict Situations",
+      "Coordinate or Lead Others in Accomplishing Work Activities",
+      "Deal With External Customers or the Public in General",
+      "Dealing With Unpleasant, Angry, or Discourteous People",
+      "Dealing with Violent or Physically Aggressive People",
+      "Face-to-Face Discussions with Individuals and Within Teams",
+      "Level of Competition",
+      "Work With or Contribute to a Work Group or Team"
+    ],
+    "importance_mean": 2.7473489932885906,
+    "level_mean": 2.759798657718121
+  },
+  "coordination": {
+    "context_features": [
+      "Conflict Situations",
+      "Coordinate or Lead Others in Accomplishing Work Activities",
+      "Deal With External Customers or the Public in General",
+      "Dealing With Unpleasant, Angry, or Discourteous People",
+      "Dealing with Violent or Physically Aggressive People",
+      "Face-to-Face Discussions with Individuals and Within Teams",
+      "Level of Competition",
+      "Work Outcomes and Results of Other Workers",
+      "Work With or Contribute to a Work Group or Team"
+    ],
+    "importance_mean": 3.1265212527964206,
+    "level_mean": 3.1453467561521253
+  },
+  "installation": {
+    "context_features": [],
+    "importance_mean": 1.2441946308724832,
+    "level_mean": 0.3617337807606264
+  },
+  "management of personnel resources": {
+    "context_features": [
+      "Coordinate or Lead Others in Accomplishing Work Activities",
+      "Work Outcomes and Results of Other Workers"
+    ],
+    "importance_mean": 2.5980536912751675,
+    "level_mean": 2.5805369127516777
+  },
+  "repairing": {
+    "context_features": [],
+    "importance_mean": 1.6776733780760626,
+    "level_mean": 1.0213534675615212
+  },
+  "technology design": {
+    "context_features": [],
+    "importance_mean": 1.7190604026845637,
+    "level_mean": 0.9896756152125279
+  },
+  "active learning": {
+    "context_features": [
+      "Freedom to Make Decisions"
+    ],
+    "importance_mean": 3.117863534675615,
+    "level_mean": 3.1985458612975393
+  },
+  "operation and control": {
+    "context_features": [
+      "In an Enclosed Vehicle or Operate Enclosed Equipment",
+      "In an Open Vehicle or Operating Equipment"
+    ],
+    "importance_mean": 2.19251677852349,
+    "level_mean": 1.7557046979865771
+  },
+  "reading comprehension": {
+    "context_features": [
+      "E-Mail"
+    ],
+    "importance_mean": 3.4838031319910514,
+    "level_mean": 3.653288590604027
+  },
+  "operations monitoring": {
+    "context_features": [
+      "In an Enclosed Vehicle or Operate Enclosed Equipment",
+      "In an Open Vehicle or Operating Equipment"
+    ],
+    "importance_mean": 2.5552684563758388,
+    "level_mean": 2.258579418344519
+  },
+  "systems evaluation": {
+    "context_features": [],
+    "importance_mean": 2.6507494407158836,
+    "level_mean": 2.6370917225950783
+  },
+  "monitoring": {
+    "context_features": [
+      "Coordinate or Lead Others in Accomplishing Work Activities",
+      "Health and Safety of Other Workers",
+      "Importance of Being Exact or Accurate",
+      "Importance of Repeating Same Tasks",
+      "Pace Determined by Speed of Equipment",
+      "Work Outcomes and Results of Other Workers",
+      "Work With or Contribute to a Work Group or Team"
+    ],
+    "importance_mean": 3.3075503355704696,
+    "level_mean": 3.376778523489933
+  },
+  "science": {
+    "context_features": [],
+    "importance_mean": 1.9491275167785234,
+    "level_mean": 1.4465883668903803
+  },
+  "speaking": {
+    "context_features": [
+      "Conflict Situations",
+      "Contact With Others",
+      "Coordinate or Lead Others in Accomplishing Work Activities",
+      "Deal With External Customers or the Public in General",
+      "Dealing With Unpleasant, Angry, or Discourteous People",
+      "Dealing with Violent or Physically Aggressive People",
+      "Face-to-Face Discussions with Individuals and Within Teams",
+      "Public Speaking",
+      "Telephone Conversations",
+      "Work With or Contribute to a Work Group or Team"
+    ],
+    "importance_mean": 3.539832214765101,
+    "level_mean": 3.4706040268456375
+  },
+  "critical thinking": {
+    "context_features": [
+      "Conflict Situations",
+      "Consequence of Error",
+      "Deal With External Customers or the Public in General",
+      "Dealing with Violent or Physically Aggressive People",
+      "Determine Tasks, Priorities and Goals",
+      "Freedom to Make Decisions",
+      "Impact of Decisions on Co-workers or Company Results",
+      "Level of Competition",
+      "Work With or Contribute to a Work Group or Team"
+    ],
+    "importance_mean": 3.518109619686801,
+    "level_mean": 3.5778523489932885
+  },
+  "writing": {
+    "context_features": [
+      "E-Mail",
+      "Written Letters and Memos"
+    ],
+    "importance_mean": 3.191935123042506,
+    "level_mean": 3.3114317673378078
+  },
+  "complex problem solving": {
+    "context_features": [
+      "Consequence of Error",
+      "Freedom to Make Decisions",
+      "Impact of Decisions on Co-workers or Company Results"
+    ],
+    "importance_mean": 3.212024608501119,
+    "level_mean": 3.1602237136465323
+  },
+  "operations analysis": {
+    "context_features": [],
+    "importance_mean": 2.0176733780760627,
+    "level_mean": 1.6473937360178972
+  },
+  "mathematics": {
+    "context_features": [],
+    "importance_mean": 2.560581655480984,
+    "level_mean": 2.558187919463087
+  },
+  "time management": {
+    "context_features": [
+      "Coordinate or Lead Others in Accomplishing Work Activities",
+      "Determine Tasks, Priorities and Goals",
+      "Time Pressure",
+      "Work Outcomes and Results of Other Workers"
+    ],
+    "importance_mean": 3.0965883668903804,
+    "level_mean": 3.0422595078299777
+  },
+  "equipment selection": {
+    "context_features": [],
+    "importance_mean": 1.714944071588367,
+    "level_mean": 1.0751901565995525
+  },
+  "social perceptiveness": {
+    "context_features": [
+      "Conflict Situations",
+      "Contact With Others",
+      "Coordinate or Lead Others in Accomplishing Work Activities",
+      "Deal With External Customers or the Public in General",
+      "Dealing With Unpleasant, Angry, or Discourteous People",
+      "Dealing with Violent or Physically Aggressive People",
+      "Face-to-Face Discussions with Individuals and Within Teams",
+      "Level of Competition",
+      "Physical Proximity",
+      "Public Speaking",
+      "Telephone Conversations",
+      "Work With or Contribute to a Work Group or Team"
+    ],
+    "importance_mean": 3.1699776286353467,
+    "level_mean": 3.116778523489933
+  },
+  "judgment and decision making": {
+    "context_features": [
+      "Consequence of Error",
+      "Freedom to Make Decisions",
+      "Impact of Decisions on Co-workers or Company Results"
+    ],
+    "importance_mean": 3.25589485458613,
+    "level_mean": 3.200917225950783
+  },
+  "negotiation": {
+    "context_features": [
+      "Conflict Situations",
+      "Coordinate or Lead Others in Accomplishing Work Activities",
+      "Deal With External Customers or the Public in General",
+      "Dealing With Unpleasant, Angry, or Discourteous People",
+      "Dealing with Violent or Physically Aggressive People",
+      "Level of Competition",
+      "Work With or Contribute to a Work Group or Team"
+    ],
+    "importance_mean": 2.609463087248322,
+    "level_mean": 2.555659955257271
+  },
+  "learning strategies": {
+    "context_features": [],
+    "importance_mean": 2.7934228187919463,
+    "level_mean": 2.858288590604027
+  },
+  "quality control analysis": {
+    "context_features": [],
+    "importance_mean": 2.4077069351230422,
+    "level_mean": 2.159026845637584
+  },
+  "instructing": {
+    "context_features": [
+      "Coordinate or Lead Others in Accomplishing Work Activities",
+      "Work Outcomes and Results of Other Workers"
+    ],
+    "importance_mean": 2.8407046979865775,
+    "level_mean": 2.910570469798658
+  },
+  "management of financial resources": {
+    "context_features": [],
+    "importance_mean": 1.8848434004474273,
+    "level_mean": 1.3434116331096198
+  },
+  "management of material resources": {
+    "context_features": [],
+    "importance_mean": 1.9717002237136465,
+    "level_mean": 1.4782662192393736
+  },
+  "systems analysis": {
+    "context_features": [],
+    "importance_mean": 2.708053691275168,
+    "level_mean": 2.645648769574944
+  },
+  "active listening": {
+    "context_features": [
+      "Conflict Situations",
+      "Contact With Others",
+      "Coordinate or Lead Others in Accomplishing Work Activities",
+      "Deal With External Customers or the Public in General",
+      "Dealing With Unpleasant, Angry, or Discourteous People",
+      "Face-to-Face Discussions with Individuals and Within Teams",
+      "Public Speaking",
+      "Telephone Conversations",
+      "Work With or Contribute to a Work Group or Team"
+    ],
+    "importance_mean": 3.597460850111857,
+    "level_mean": 3.555850111856823
+  },
+  "equipment maintenance": {
+    "context_features": [],
+    "importance_mean": 1.7089485458612974,
+    "level_mean": 1.053993288590604
+  },
+  "troubleshooting": {
+    "context_features": [],
+    "importance_mean": 2.0423266219239373,
+    "level_mean": 1.5539597315436242
+  }
+}

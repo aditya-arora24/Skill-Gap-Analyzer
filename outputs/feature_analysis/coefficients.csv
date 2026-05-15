@@ -1,0 +1,9 @@
+feature,coef,abs_coef
+embedding_similarity,0.979,0.979
+skill_overlap,0.7163,0.7163
+num_missing_skills,-0.6994,0.6994
+weighted_skill_score,-0.6965,0.6965
+tfidf_similarity,0.5605,0.5605
+title_similarity,0.4972,0.4972
+avg_missing_skill_importance,-0.2789,0.2789
+years_of_experience,0.0039,0.0039

@@ -1,0 +1,4 @@
+Option,Threshold,CV F1,Test F1,Accuracy,Precision,Recall,wss_coef,wss_abs_coef,avg_missing_imp_coef,wss_permutation_drop,wss_mean,wss_std,wss_unique
+Baseline (depth only),0.52,0.5382,0.7692,0.88,0.6667,0.9091,-0.7201,0.7201,-0.2724,0.0597,0.2197,0.2425,1773
+A: depth × SBERT,0.52,0.5321,0.7547,0.87,0.6452,0.9091,-0.132,0.132,-0.2732,0.0009,0.2188,0.2434,9241
+B: depth × TFIDF,0.52,0.5289,0.7547,0.87,0.6452,0.9091,-0.1952,0.1952,-0.2426,0.0135,0.2075,0.2374,9254

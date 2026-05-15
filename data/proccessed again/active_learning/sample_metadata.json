@@ -1,0 +1,41 @@
+{
+  "random_seed": 42,
+  "uncertainty_band": [
+    0.4,
+    0.6
+  ],
+  "n_pool": 50650,
+  "n_pool_after_drop_gold": 50150,
+  "n_in_band": 8902,
+  "n_sampled": 200,
+  "row_id_range": [
+    1001,
+    1200
+  ],
+  "n_batches": 2,
+  "batch_size": 100,
+  "source_distribution": {
+    "B_xcat": 50,
+    "A_mid": 50,
+    "topK": 50,
+    "C_rand": 50
+  },
+  "category_distribution_top10": {
+    "HEALTHCARE": 16,
+    "HR": 15,
+    "BANKING": 14,
+    "FITNESS": 13,
+    "INFORMATION-TECHNOLOGY": 12,
+    "BUSINESS-DEVELOPMENT": 12,
+    "ARTS": 12,
+    "ADVOCATE": 11,
+    "DIGITAL-MEDIA": 11,
+    "CONSULTANT": 11
+  },
+  "n_categories": 24,
+  "prob_quartiles": {
+    "q25": 0.43540976829876266,
+    "q50": 0.47910234312099964,
+    "q75": 0.5255475311127602
+  }
+}

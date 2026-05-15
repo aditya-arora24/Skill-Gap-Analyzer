@@ -1,0 +1,28 @@
+{
+  "variant_name": "B",
+  "description": "Skill-only holdout. Label = 0.7*wss + 0.3*edu. Hold out only weighted_skill_score and education_match. Train on 9 features including embedding_similarity and title_similarity. Tests whether models can learn to combine semantic + skill signals when the skill signal is held out from training.",
+  "label_weights": {
+    "weighted_skill_score": 0.7,
+    "education_match":      0.3
+  },
+  "label_quantiles": {
+    "high_pct": 0.70,
+    "low_pct":  0.30
+  },
+  "holdout_features": [
+    "weighted_skill_score",
+    "education_match"
+  ],
+  "training_features": [
+    "embedding_similarity",
+    "tfidf_similarity",
+    "skill_overlap",
+    "num_missing_skills",
+    "avg_missing_skill_importance",
+    "years_of_experience",
+    "experience_gap",
+    "experience_relevance_score",
+    "title_similarity"
+  ],
+  "random_state": 42
+}

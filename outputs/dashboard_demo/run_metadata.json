@@ -1,0 +1,39 @@
+{
+  "resume_id": 331,
+  "resume_category": "INFORMATION-TECHNOLOGY",
+  "n_resume_skills": 50,
+  "top_jobs": [
+    {
+      "job_id": 75,
+      "title": "Supply Chain Analyst",
+      "score": 0.9086122021386219
+    },
+    {
+      "job_id": 419,
+      "title": "Accounting Clerk",
+      "score": 0.8335637942133443
+    },
+    {
+      "job_id": 74,
+      "title": "Supply Chain Analyst - Senior",
+      "score": 0.7755254007004821
+    },
+    {
+      "job_id": 76,
+      "title": "Supply Chain Analyst",
+      "score": 0.5758563079488234
+    },
+    {
+      "job_id": 21,
+      "title": "Chief Executive Officer - CEO Consultant",
+      "score": 0.4620232704006557
+    }
+  ],
+  "q12_added_skills": [
+    "source",
+    "energy"
+  ],
+  "avg_score_before": 0.7111161950803855,
+  "avg_score_after": 0.7623189137838876,
+  "avg_score_delta": 0.051202718703502126
+}

@@ -1,0 +1,146 @@
+row_id,job_id,resume_id,source_for_sample,claude_label,gpt_label,gemini_label,majority_label,agreement,is_unanimous,embedding_similarity,skill_overlap,weighted_skill_score,resume_category,job_position_title
+2,564,1230,topK,1,0,1,1,2-1,False,0.6349409,0.0,0.0,DIGITAL-MEDIA,Business Development Executive
+8,543,654,topK,1,0,1,1,2-1,False,0.6944183,0.11111111,0.11111111,BUSINESS-DEVELOPMENT,Marketing Intern
+9,169,14,topK,1,0,1,1,2-1,False,0.6421341,0.0,0.0,HR,Claims Investigator
+11,730,1004,topK,1,0,1,1,2-1,False,0.5408116,0.0,0.0,SALES,"Retail Sales Associate - Furniture​/Mattresses, Quaker Bridge Mall..."
+12,195,2440,topK,1,0,1,1,2-1,False,0.78808856,0.44444445,0.43340376,AVIATION,Office Clerk
+13,352,1428,B_xcat,0,0,1,0,2-1,False,0.5674485,0.16666667,0.10094563,CHEF,"Manager, Sales and Customer Service"
+18,629,2298,topK,1,0,1,1,2-1,False,0.57856077,0.0,0.0,ARTS,sales associate
+34,198,2084,topK,1,0,1,1,2-1,False,0.73275083,0.5,0.45577154,PUBLIC-RELATIONS,Office Clerk
+35,625,968,topK,1,0,1,1,2-1,False,0.50675654,0.0,0.0,AGRICULTURE,Sales Associate - Dalhousie
+40,85,1413,topK,1,0,1,1,2-1,False,0.6367358,0.25,0.17076151,CHEF,Kitchen Cleaner (Utility)
+42,128,2246,topK,1,0,1,1,2-1,False,0.6579108,0.6666667,0.6896552,BANKING,Business Development Center Representative - Performance Columbus
+44,238,1992,topK,1,0,1,1,2-1,False,0.8115642,0.2,0.16666667,CONSTRUCTION,Infrastructure Services Project Manager
+46,205,457,topK,1,0,1,1,2-1,False,0.63162416,0.0,0.0,ADVOCATE,Medicaid Fraud Intake Officer  (22000555)
+48,80,1075,topK,1,0,1,1,2-1,False,0.47574428,0.0,0.0,SALES,Commission Sales Associate
+55,420,1524,topK,0,1,1,1,2-1,False,0.8349399,0.25,0.27492374,FINANCE,"Senior Accountant, Banking (Lakewood)"
+56,608,674,topK,1,0,1,1,2-1,False,0.5927873,0.0,0.0,BUSINESS-DEVELOPMENT,Broadcast Media Sales
+65,319,1145,topK,0,0,1,0,2-1,False,0.62834597,0.25,0.25,CONSULTANT,Career Coach Waitlist (Part-time/Contract/US Remote)
+66,332,1147,topK,1,0,1,1,2-1,False,0.5719766,0.3,0.2754756,CONSULTANT,Technical Support Agent (Remote CT/MT/PT USA)
+68,452,2211,topK,0,0,1,0,2-1,False,0.5969887,0.0,0.0,BANKING,Sales leader
+70,780,1319,B_xcat,0,0,1,0,2-1,False,0.60833544,0.0,0.0,DIGITAL-MEDIA,Vice President Marketing
+81,266,61,topK,1,0,1,1,2-1,False,0.7191817,0.5,0.43160117,HR,Talent Acquisition Coordinator/ Technical Recruiter (100% Remote...
+82,691,459,topK,0,0,1,0,2-1,False,0.66404676,0.4,0.4,ADVOCATE,Medical Receptionist
+86,697,1930,topK,0,0,1,0,2-1,False,0.65379786,0.11111111,0.11111111,CONSTRUCTION,Project Manager
+87,251,571,topK,0,1,1,1,2-1,False,0.7673242,0.2,0.23142204,BUSINESS-DEVELOPMENT,"Manager, Commerce Marketing"
+94,736,327,A_mid,0,0,1,0,2-1,False,0.48243845,0.11111111,0.11759695,INFORMATION-TECHNOLOGY,CCRD Customer Service Representative - Work from Home (Remote)
+97,693,481,topK,1,0,1,1,2-1,False,0.6617723,0.0,0.0,ADVOCATE,Sales Associate/Beauty Advisor
+99,4,1167,B_xcat,0,0,1,0,2-1,False,0.5090667,0.1,0.12384478,CONSULTANT,Web Developer
+103,730,1036,topK,1,0,1,1,2-1,False,0.53839856,0.0,0.0,SALES,"Retail Sales Associate - Furniture​/Mattresses, Quaker Bridge Mall..."
+110,834,2351,topK,1,0,0,0,2-1,False,0.6968161,0.5,0.48612654,ARTS,Executive Assistant
+111,193,1914,topK,1,0,1,1,2-1,False,0.69013155,0.6666667,0.60296285,ACCOUNTANT,Fraud & Compliance - AML/BSA Specialist
+124,179,2199,topK,1,0,1,1,2-1,False,0.7099595,0.16666667,0.16072556,BANKING,Staff Software Engineer - SMB - Marketing Enablement
+127,109,760,B_xcat,0,1,0,0,2-1,False,0.60766447,0.0,0.0,HEALTHCARE,"Director, Sales & Marketing"
+135,133,623,topK,1,0,0,0,2-1,False,0.7086442,0.6666667,0.6034724,BUSINESS-DEVELOPMENT,Automotive Business Development Center (BDC) Representative
+137,502,445,topK,1,0,1,1,2-1,False,0.7763566,0.71428573,0.71428573,ADVOCATE,"Coordinator, Customer Care Center"
+138,640,1057,topK,1,0,1,1,2-1,False,0.5681763,0.0,0.0,SALES,Retail Sales Associate (part-time) - 162
+139,64,286,topK,0,0,1,0,2-1,False,0.38548666,0.0,0.0,INFORMATION-TECHNOLOGY,Web Developer (Front-End)
+144,334,1347,topK,1,0,1,1,2-1,False,0.657812,0.33333334,0.32286066,AUTOMOBILE,Tech Support Agent - Remote US
+146,175,1627,A_mid,1,0,1,1,2-1,False,0.4075732,0.0,0.0,APPAREL,Inventory Clerk
+147,788,99,topK,1,0,0,0,2-1,False,0.56863123,1.0,1.0,HR,Administrative assistant
+152,314,645,topK,1,0,1,1,2-1,False,0.674294,0.6666667,0.6375929,BUSINESS-DEVELOPMENT,Marketing Coordinator
+153,268,87,topK,1,0,1,1,2-1,False,0.6245863,0.5,0.5,HR,Talent Acquisition Specialist
+156,366,2350,B_xcat,1,0,1,1,2-1,False,0.5214797,0.25,0.25,ARTS,Sales Associate
+160,31,304,topK,1,0,0,0,2-1,False,0.63883114,0.2,0.23142204,INFORMATION-TECHNOLOGY,Entry Level Software Engineer
+161,55,1124,topK,0,0,1,0,2-1,False,0.6795098,0.0,0.0,CONSULTANT,Sales Executive III Client Management
+164,737,238,topK,1,0,1,1,2-1,False,0.5511541,0.6666667,0.6666667,INFORMATION-TECHNOLOGY,Remote Customer Service Representative ($16/hr)
+168,53,1555,topK,1,0,1,1,2-1,False,0.47758445,0.0,0.0,FINANCE,Bank Teller
+170,814,1188,topK,0,1,0,0,2-1,False,0.6785071,0.0,0.0,CONSULTANT,Sr. E-Commerce Marketing Director
+172,333,784,topK,0,0,1,0,2-1,False,0.71522695,0.0,0.0,HEALTHCARE,Technical Support Agent (Remote)
+173,125,842,C_rand,1,0,1,1,2-1,False,0.67209214,0.75,0.75,FITNESS,"Retail Sales Associate - Full Time or Part Time (Columbus, Ohio)"
+175,519,1178,topK,0,0,1,0,2-1,False,0.67257726,0.4,0.43240398,CONSULTANT,"VP, Healthcare Services"
+178,468,1118,topK,1,0,1,1,2-1,False,0.76063776,0.11111111,0.12567483,CONSULTANT,Data Management Analyst for Netsmart
+179,828,1680,topK,1,0,1,1,2-1,False,0.706387,0.0,0.0,APPAREL,Luxury Sales Stylist - Mens Combo - Saks Fifth Avenue
+182,256,1099,topK,0,0,1,0,2-1,False,0.83188504,0.44444445,0.49945453,SALES,Bilingual Spanish CUSTOMER SERVICE REPRESENTATIVE Work From Home...
+186,638,544,topK,1,0,1,1,2-1,False,0.72128576,0.2,0.23359968,ADVOCATE,Data Entry Operator - REMOTE
+195,847,674,topK,1,0,1,1,2-1,False,0.68071043,0.14285715,0.16241562,BUSINESS-DEVELOPMENT,Marketing Project Intern
+197,569,1865,topK,1,0,1,1,2-1,False,0.72531676,0.4,0.42904553,ACCOUNTANT,Sr Accountant
+199,333,280,topK,1,0,1,1,2-1,False,0.71613806,0.0,0.0,INFORMATION-TECHNOLOGY,Technical Support Agent (Remote)
+200,366,1226,B_xcat,1,0,1,1,2-1,False,0.5019878,0.25,0.25,DIGITAL-MEDIA,Sales Associate
+201,264,42,C_rand,1,0,1,1,2-1,False,0.61875385,0.6666667,0.6666667,HR,Talent Acquisition Specialist / Recruiter
+206,285,802,topK,1,0,1,1,2-1,False,0.75912744,0.2857143,0.33186084,FITNESS,Strength & Conditioning Coach Jobs at Onelife Fitness – Falls...
+212,354,2051,topK,1,0,1,1,2-1,False,0.6718214,0.0,0.0,PUBLIC-RELATIONS,Sales And Marketing Representative
+218,729,2410,A_mid,1,0,0,0,2-1,False,0.35215494,0.0,0.0,AVIATION,Work From Home Administrative Assistant Skills (Data Entry - Remote)
+225,286,2170,topK,1,0,1,1,2-1,False,0.6936672,0.22222222,0.22727273,BANKING,Fraud Representative
+230,161,516,topK,0,0,1,0,2-1,False,0.61107737,0.0,0.0,ADVOCATE,Criminal Investigator 2
+231,705,1248,topK,1,0,1,1,2-1,False,0.6739545,1.0,1.0,DIGITAL-MEDIA,Sales Representatives
+232,807,104,topK,1,0,1,1,2-1,False,0.66267204,0.23529412,0.22931863,HR,"Executive Coordinator, Office of The President"
+239,389,1633,topK,1,0,1,1,2-1,False,0.71436596,0.0,0.0,APPAREL,Retail Sales Associate
+242,71,2467,topK,1,0,1,1,2-1,False,0.77071065,0.0,0.0,AVIATION,Supply Chain Analyst
+243,641,1224,B_xcat,1,0,1,1,2-1,False,0.5031854,0.25,0.28823388,CONSULTANT,Content Creator
+244,144,1744,topK,1,0,1,1,2-1,False,0.45132956,0.0,0.0,ENGINEERING,"Software Engineer, Test, Advertising"
+246,223,579,topK,1,0,1,1,2-1,False,0.6865257,0.25,0.26600498,BUSINESS-DEVELOPMENT,Customer Service Representative (Work at Home)
+250,418,1898,topK,1,0,1,1,2-1,False,0.7301092,0.2,0.11478103,ACCOUNTANT,"Holman Frenia Allison, PC Hiring for Audit Staff Accountant Job at..."
+254,843,317,topK,1,0,0,0,2-1,False,0.7598175,0.5,0.6075367,INFORMATION-TECHNOLOGY,Remote Logistics Customer Service Rep
+257,346,299,topK,1,0,1,1,2-1,False,0.7101202,0.22222222,0.25518954,INFORMATION-TECHNOLOGY,Project Manager
+262,687,2140,topK,1,0,1,1,2-1,False,0.6897745,0.0,0.0,PUBLIC-RELATIONS,Crew Team Member
+264,626,900,topK,1,0,1,1,2-1,False,0.6551734,0.6666667,0.6666667,FITNESS,Customer Service Sales Associate
+267,819,167,B_xcat,1,0,1,1,2-1,False,0.55212164,0.4,0.41666666,DESIGNER,FT Sales Associate
+268,557,2418,topK,1,0,1,1,2-1,False,0.6655966,0.14285715,0.15340586,AVIATION,Executive Assistant to CEO at Chartis Federal (Hybrid: Remote ...
+270,450,601,topK,1,0,1,1,2-1,False,0.69299203,0.5,0.43160117,BUSINESS-DEVELOPMENT,Regional Sales Manager - Air Solutions NE
+271,456,1914,topK,0,0,1,0,2-1,False,0.7633059,0.2857143,0.33127326,ACCOUNTANT,VP of Finance (East Meadow)
+280,789,782,topK,1,0,1,1,2-1,False,0.69832236,0.0,0.0,HEALTHCARE,Administrative Assistant - Remote / Online / Work From Home (PT/FT)
+296,460,2168,topK,0,0,1,0,2-1,False,0.748006,0.3,0.29796705,BANKING,"Associate Director, Global Capital Markets Documentation, GBM..."
+297,274,1245,A_mid,1,0,1,1,2-1,False,0.46518365,0.0,0.0,DIGITAL-MEDIA,Marketing Specialist
+299,489,2366,C_rand,0,0,1,0,2-1,False,0.47228432,0.0,0.0,ARTS,Nursing Assistant (Inpatient Mental Health)
+303,641,1227,A_mid,1,0,1,1,2-1,False,0.46673942,0.125,0.14411694,DIGITAL-MEDIA,Content Creator
+305,148,1997,topK,0,1,0,0,2-1,False,0.6956106,0.125,0.12935348,CONSTRUCTION,Program Compliance Manager
+315,102,1589,topK,0,1,0,0,2-1,False,0.69175655,0.14285715,0.14705883,FINANCE,Senior Vice President of Property Management
+321,672,1001,topK,1,0,1,1,2-1,False,0.69705033,0.33333334,0.33333334,SALES,Software Developer- Entry Level
+323,594,2093,topK,0,1,1,1,2-1,False,0.61321867,0.2,0.20833333,PUBLIC-RELATIONS,"Vice President, Marketing, MSNBC"
+324,781,553,C_rand,0,0,1,0,2-1,False,0.7283978,0.2857143,0.27333778,ADVOCATE,Vice President Marketing
+326,659,2162,A_mid,1,0,1,1,2-1,False,0.43325835,0.2857143,0.2857143,BANKING,Clerical Assistant
+331,474,1343,topK,1,0,1,1,2-1,False,0.715315,0.25,0.27944502,AUTOMOBILE,Office Administrator
+336,280,487,topK,1,0,1,1,2-1,False,0.7223128,0.5,0.52452207,ADVOCATE,Customer Service Representative 
+338,792,772,A_mid,0,0,1,0,2-1,False,0.49296352,0.16666667,0.17795755,HEALTHCARE,Remote Administrative Assistant
+343,631,1535,C_rand,1,0,0,0,2-1,False,0.45487806,0.0,0.0,FINANCE,Sales Associate
+345,456,1483,topK,0,1,1,1,2-1,False,0.7452537,0.21428572,0.24845494,FINANCE,VP of Finance (East Meadow)
+347,183,892,C_rand,0,1,1,1,2-1,False,0.4939341,0.0,0.0,FITNESS,Financial Professional – Financial / Insurance – Entry Level
+348,626,763,B_xcat,1,0,1,1,2-1,False,0.559785,0.6666667,0.6666667,HEALTHCARE,Customer Service Sales Associate
+352,450,777,B_xcat,0,1,1,1,2-1,False,0.529536,0.0,0.0,HEALTHCARE,Regional Sales Manager - Air Solutions NE
+354,172,1435,A_mid,0,0,1,0,2-1,False,0.39661285,0.0,0.0,CHEF,Inventory Clerk
+356,593,1122,topK,0,1,0,0,2-1,False,0.6697475,0.0,0.0,CONSULTANT,"Integrated Marketing, VP (Retirement Group)"
+360,699,253,topK,1,0,1,1,2-1,False,0.7309829,0.0,0.0,INFORMATION-TECHNOLOGY,IT Help Desk Technical Support Agent (Remote/Telecommute)
+361,791,525,topK,0,1,1,1,2-1,False,0.6568165,0.22222222,0.18256027,ADVOCATE,"Administrative Assistant III (Part time) – Remote, Work from Anywhere"
+362,599,2243,A_mid,0,0,1,0,2-1,False,0.4459652,0.0,0.0,BANKING,Development Associate
+364,647,594,topK,0,0,1,0,2-1,False,0.64600945,0.0,0.0,BUSINESS-DEVELOPMENT,Medical Office Specialist
+365,82,1655,topK,1,0,1,1,2-1,False,0.6158471,1.0,1.0,APPAREL,"Retail Commission Sales Associate - Fine Jewelry, Northridge..."
+366,461,1680,topK,0,1,0,0,2-1,False,0.56709903,0.0,0.0,APPAREL,Furniture Product Sales Liasion
+370,528,2022,B_xcat,0,0,1,0,2-1,False,0.6330507,0.0,0.0,CONSTRUCTION,Software Engineering
+376,672,1147,topK,0,0,1,0,2-1,False,0.72814333,0.33333334,0.33333334,CONSULTANT,Software Developer- Entry Level
+377,15,935,B_xcat,0,1,0,0,2-1,False,0.53617114,0.14285715,0.16563663,AGRICULTURE,Senior Web Designer (REMOTE)
+381,691,741,topK,0,1,1,1,2-1,False,0.69580793,0.6,0.6,HEALTHCARE,Medical Receptionist
+382,387,534,C_rand,1,0,0,0,2-1,False,0.44114268,0.33333334,0.33333334,ADVOCATE,Sales Associate
+383,212,180,topK,1,1,0,1,2-1,False,0.48917764,1.0,1.0,DESIGNER,CDL-A Truck Driver - $5K Sign On Bonus
+388,734,654,topK,0,0,1,0,2-1,False,0.5129653,0.5,0.5,BUSINESS-DEVELOPMENT,Customer Service Agent
+390,774,1499,topK,1,0,1,1,2-1,False,0.6098914,0.0,0.0,FINANCE,Real Estate Acquisitions Analyst / Sr. Analyst
+407,676,1274,A_mid,0,1,0,0,2-1,False,0.4525075,0.0,0.0,DIGITAL-MEDIA,System Software Development Engineer - Entry Level
+414,712,1676,B_xcat,0,1,0,0,2-1,False,0.55826277,0.375,0.33498752,APPAREL,"Business Development Manager, NA Marketing Services"
+418,807,538,topK,0,1,0,0,2-1,False,0.67213416,0.11764706,0.09897419,ADVOCATE,"Executive Coordinator, Office of The President"
+419,13,2202,topK,0,1,0,0,2-1,False,0.59817207,0.11111111,0.11111111,BANKING,Wordpress Web Developer
+425,426,2007,B_xcat,0,1,0,0,2-1,False,0.514821,0.33333334,0.33333334,CONSTRUCTION,Business Development Associate
+431,700,2332,B_xcat,0,1,0,0,2-1,False,0.6549817,0.0625,0.07109799,ARTS,Systems Administrator
+441,429,601,topK,0,1,1,1,2-1,False,0.66557914,0.1875,0.1720206,BUSINESS-DEVELOPMENT,Business Development & Sales Analyst II
+442,504,1266,B_xcat,1,1,0,1,2-1,False,0.6534896,0.5,0.4802126,DIGITAL-MEDIA,Customer Service Representative / Inside Sales
+443,103,1969,A_mid,0,1,0,0,2-1,False,0.41090548,0.0,0.0,CONSTRUCTION,Regional Vice President of Sales
+444,685,1330,topK,1,0,0,0,2-1,False,0.73821324,0.6666667,0.6666667,AUTOMOBILE,Restaurant Team Member - Cashier
+447,609,639,topK,0,1,1,1,2-1,False,0.70454633,0.16666667,0.16666667,BUSINESS-DEVELOPMENT,Dir Software Solutions Sales Senior
+452,571,511,topK,0,1,0,0,2-1,False,0.6214812,0.0,0.0,ADVOCATE,Investigator - Network Services
+457,15,195,B_xcat,0,1,0,0,2-1,False,0.59176606,0.14285715,0.16563663,DESIGNER,Senior Web Designer (REMOTE)
+460,238,1721,topK,1,1,0,1,2-1,False,0.780775,0.0,0.0,ENGINEERING,Infrastructure Services Project Manager
+467,167,1090,topK,1,0,0,0,2-1,False,0.5892134,0.0,0.0,SALES,Criminal justice
+473,801,1980,topK,0,1,0,0,2-1,False,0.7766907,0.25,0.3010332,CONSTRUCTION,Vice President Operations
+474,521,1173,B_xcat,0,1,0,0,2-1,False,0.68630517,0.5714286,0.5714286,CONSULTANT,Senior Embedded C++ Developer
+477,404,910,A_mid,0,1,0,0,2-1,False,0.4989345,0.16666667,0.193044,AGRICULTURE,Construction Project Manager - Remote
+480,717,588,topK,0,1,1,1,2-1,False,0.71709156,0.0,0.0,BUSINESS-DEVELOPMENT,Migrations Sales Executive- Credit Union
+481,269,61,topK,0,0,1,0,2-1,False,0.68860257,1.0,1.0,HR,Talent Acquisition Manager
+482,469,280,topK,0,1,0,0,2-1,False,0.72545445,0.0,0.0,INFORMATION-TECHNOLOGY,"Associate Project Manager, IVD Product Development (San Diego, CA)"
+484,705,2119,topK,0,1,0,0,2-1,False,0.6578353,1.0,1.0,PUBLIC-RELATIONS,Sales Representatives
+486,372,2457,topK,0,1,0,0,2-1,False,0.6565644,0.15384616,0.17307074,AVIATION,Senior / Lead Software Engineer (Remote)
+491,252,468,topK,1,1,0,1,2-1,False,0.7034532,0.0,0.0,ADVOCATE,Project Manager I/II- Remote
+493,97,1767,topK,0,1,0,0,2-1,False,0.58679557,0.26666668,0.2679236,ENGINEERING,Full Stack Software Engineer
+494,700,317,topK,0,1,0,0,2-1,False,0.76391584,0.25,0.28439197,INFORMATION-TECHNOLOGY,Systems Administrator
+495,522,1710,topK,1,1,0,1,2-1,False,0.64564055,0.16666667,0.16666667,ENGINEERING,C++ Embedded Engineer
+496,790,591,topK,1,0,0,0,2-1,False,0.68023795,1.0,1.0,BUSINESS-DEVELOPMENT,Work From Home Part Time Administrative Assistant / Customer...
+498,848,1052,A_mid,1,0,1,1,2-1,False,0.4989059,0.5,0.61754405,SALES,Management Internship
+500,722,1666,topK,1,0,1,1,2-1,False,0.68041635,0.25,0.27854508,APPAREL,Entry Level - Transaction Monitoring Investigator 

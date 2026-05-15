@@ -1,0 +1,8 @@
+variant,Model,Threshold,Accuracy,Precision,Recall,F1
+A,SBERT Only,0.65,0.62,0.6102,0.7059,0.6545
+A,GBM (tuned),0.35,0.54,0.5385,0.6863,0.6034
+A,LogReg (tuned),0.35,0.55,0.55,0.6471,0.5946
+A,Title Similarity,0.3,0.51,0.5179,0.5686,0.5421
+A,TF-IDF Only,0.1,0.6,0.6667,0.4314,0.5238
+A,Composite Label,0.491,0.55,0.6,0.3529,0.4444
+A,Weighted Skills,0.3,0.53,0.5833,0.2745,0.3733

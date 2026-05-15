@@ -1,0 +1,9 @@
+feature,mean_f1_drop,std_f1_drop
+embedding_similarity,0.2503,0.0691
+title_similarity,0.1184,0.0455
+num_missing_skills,0.1048,0.0382
+tfidf_similarity,0.0853,0.0427
+skill_overlap,0.0707,0.0389
+weighted_skill_score,0.0529,0.0368
+avg_missing_skill_importance,0.0109,0.0179
+years_of_experience,0.0,0.0

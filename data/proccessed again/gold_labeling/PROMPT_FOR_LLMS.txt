@@ -1,0 +1,19 @@
+You are evaluating whether a candidate's resume is a good match for a job description.
+
+For each row in the CSV I have uploaded:
+- Read the resume_text and job_description.
+- Output label = 1 if the candidate is a GOOD match for the job (has the
+  core required skills and clearly relevant experience).
+- Output label = 0 if the candidate is NOT a good match.
+- Be strict. A good match means the candidate could plausibly do the job
+  with at most minor onboarding. Adjacent skills or generic competencies
+  ("communication", "teamwork") alone do not qualify as a match.
+- Do not consider formatting, writing quality, or resume length.
+- Only judge based on skills, experience, and role fit.
+
+Return ONLY a CSV with two columns and a header row:
+
+    row_id,label
+
+One row per input pair. Do not include any other text, explanation, or commentary.
+If you cannot judge a pair (text is empty or unreadable), output label = 0 for that row.

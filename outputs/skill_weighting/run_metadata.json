@@ -1,0 +1,61 @@
+{
+  "alpha_sbert": 1.0,
+  "beta_tfidf": 1.0,
+  "n_skills": 1967,
+  "n_jobs": 853,
+  "n_resumes": 2484,
+  "n_test": 100,
+  "n_train": 600,
+  "results": [
+    {
+      "Option": "Baseline (depth only)",
+      "Threshold": 0.52,
+      "CV F1": 0.5382,
+      "Test F1": 0.7692,
+      "Accuracy": 0.88,
+      "Precision": 0.6667,
+      "Recall": 0.9091,
+      "wss_coef": -0.7201,
+      "wss_abs_coef": 0.7201,
+      "avg_missing_imp_coef": -0.2724,
+      "wss_permutation_drop": 0.0597,
+      "wss_mean": 0.2197,
+      "wss_std": 0.2425,
+      "wss_unique": 1773
+    },
+    {
+      "Option": "A: depth \u00d7 SBERT",
+      "Threshold": 0.52,
+      "CV F1": 0.5321,
+      "Test F1": 0.7547,
+      "Accuracy": 0.87,
+      "Precision": 0.6452,
+      "Recall": 0.9091,
+      "wss_coef": -0.132,
+      "wss_abs_coef": 0.132,
+      "avg_missing_imp_coef": -0.2732,
+      "wss_permutation_drop": 0.0009,
+      "wss_mean": 0.2188,
+      "wss_std": 0.2434,
+      "wss_unique": 9241
+    },
+    {
+      "Option": "B: depth \u00d7 TFIDF",
+      "Threshold": 0.52,
+      "CV F1": 0.5289,
+      "Test F1": 0.7547,
+      "Accuracy": 0.87,
+      "Precision": 0.6452,
+      "Recall": 0.9091,
+      "wss_coef": -0.1952,
+      "wss_abs_coef": 0.1952,
+      "avg_missing_imp_coef": -0.2426,
+      "wss_permutation_drop": 0.0135,
+      "wss_mean": 0.2075,
+      "wss_std": 0.2374,
+      "wss_unique": 9254
+    }
+  ],
+  "winner": "Baseline (depth only)",
+  "winner_f1": 0.7692
+}

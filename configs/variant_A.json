@@ -1,0 +1,30 @@
+{
+  "variant_name": "A",
+  "description": "Strict holdout. Label = 0.4*emb + 0.3*wss + 0.2*title + 0.1*edu. Hold out all 4 label features. Train on the 7 leakage-safe features.",
+  "label_weights": {
+    "embedding_similarity": 0.4,
+    "weighted_skill_score":  0.3,
+    "title_similarity":      0.2,
+    "education_match":       0.1
+  },
+  "label_quantiles": {
+    "high_pct": 0.70,
+    "low_pct":  0.30
+  },
+  "holdout_features": [
+    "embedding_similarity",
+    "weighted_skill_score",
+    "title_similarity",
+    "education_match"
+  ],
+  "training_features": [
+    "tfidf_similarity",
+    "skill_overlap",
+    "num_missing_skills",
+    "avg_missing_skill_importance",
+    "years_of_experience",
+    "experience_gap",
+    "experience_relevance_score"
+  ],
+  "random_state": 42
+}
