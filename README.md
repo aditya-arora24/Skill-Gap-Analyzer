@@ -1,194 +1,265 @@
-# Resume–Job Alignment ML System
 
-A machine learning pipeline that determines whether a candidate's resume is a strong match for a job description. It combines semantic embeddings, keyword similarity, and structural skill signals — then evaluates against a hand-labeled gold standard to ensure results reflect real-world judgment.
+# SkillMatch — Two-Stage Skill-Aware Resume–Job Matching System
 
----
+> MLPR Endterm Project — Plaksha University (2026)
 
-## The Problem
-
-Simple systems compare resumes and jobs using only semantic similarity (e.g., cosine similarity on SBERT embeddings). This works reasonably well but has a known flaw: semantically similar text doesn't guarantee skill alignment. A resume written in professional language scores high even when it lacks the specific skills a job requires.
-
-This project fixes that by training classifiers on a richer feature set that captures what semantic similarity misses.
+A hybrid retrieval-and-reranking machine learning pipeline for resume–job matching using semantic similarity, lexical similarity, ESCO-grounded skill reasoning, and active learning.
 
 ---
 
-## Pipeline Overview
+# Project Overview
 
-```
-Raw Data (130 resumes, 43 jobs)
-        │
-        ▼
-  1. Text Cleaning          — normalize, strip HTML, mask PII
-        │
-        ▼
-  2. Skill Extraction       — 258 seed keywords + 7 contextual patterns
-        │
-        ▼
-  3. SBERT Pairing          — Top-6 most similar jobs per resume → 9,495 pairs
-        │
-        ▼
-  4. Weak Labeling          — skill_coverage quantiles (70th / 30th percentile)
-        │
-        ▼
-  5. Feature Upgrade        — add tfidf_similarity + skill_imbalance
-        │
-        ▼
-  6. Model Training         — LogReg + GBM, CV threshold tuning
-        │
-        ▼
-  7. Gold Standard Eval     — 100 expert-labeled pairs, zero leakage
-```
+Traditional resume–job matching systems rely heavily on semantic similarity or keyword overlap, often producing plausible-looking but structurally incorrect matches.
+
+SkillMatch introduces a two-stage architecture:
+
+1. **SBERT-based semantic retrieval**
+2. **Hybrid ML reranking using semantic, lexical, skill-based, and structural features**
+
+The project systematically investigates:
+- Weak supervision
+- LLM-supervised learning
+- Self-training
+- Active learning
+
+under limited-label settings.
 
 ---
 
-## Features
+# Final Architecture
 
-| Feature | Description |
-|---|---|
-| `semantic_similarity` | SBERT cosine similarity (`all-MiniLM-L6-v2`) — captures contextual meaning |
-| `tfidf_similarity` | TF-IDF cosine similarity — captures exact keyword overlap |
-| `num_resume_skills` | Count of skills extracted from resume (mean: 6.5) |
-| `num_job_skills` | Count of skills extracted from job description (mean: 10.0) |
-| `skill_imbalance` | `num_job_skills − num_resume_skills` — measures how underqualified a candidate is |
-
-**Note:** `skill_coverage` and `skill_gap` are used only to generate weak training labels — they are deliberately excluded from model features to prevent label leakage.
-
----
-
-## Models & Evaluation
-
-Two classifiers are trained on the 9,495 weakly-labeled pairs and evaluated on the 100-sample expert-labeled gold set:
-
-- **Logistic Regression** — fast, interpretable baseline
-- **Gradient Boosting Classifier** — captures non-linear feature interactions
-
-Each model's decision threshold is tuned independently using 5-fold cross-validated out-of-fold probabilities on training data (threshold range: 0.10–0.90, optimized for F1). Thresholds are never tuned on the gold set.
-
-**Baselines compared:**
-
-| Baseline | Threshold |
-|---|---|
-| SBERT Only | 0.50 |
-| TF-IDF Only | 0.15 |
-| Midsem Heuristic (0.6 × semantic + 0.4 × skill_coverage) | 0.50 |
+```text
+Resume + Job Description
+        ↓
+Stage 1: SBERT Retrieval
+        ↓
+Top-K Candidate Pairs
+        ↓
+Stage 2: Hybrid ML Reranking
+(Logistic Regression + 8 Features)
+        ↓
+Match Probability + Skill Gap Analysis
+````
 
 ---
 
-## Leakage Prevention
+# Features Used
 
-This is the most critical design constraint in the project:
-
-- `skill_coverage` is used to generate weak labels but is **never passed as a model feature**
-- The `TfidfVectorizer` is fitted **only on training text**, then applied to the gold set without refitting
-- The `StandardScaler` is fitted **only on training features**, then applied to the gold set
-- The gold standard is used **only for final evaluation** — never for training or threshold selection
-- Cross-validation for threshold tuning uses **out-of-fold probabilities only**
-
----
-
-## Data
-
-| Dataset | Rows | Description |
-|---|---|---|
-| `ml_ready_dataset.csv` | 9,495 | Training pairs with weak supervision labels and all 5 features |
-| `gold_standard_final.csv` | 100 | Expert-labeled pairs (56 positive, 44 negative) |
-
-**Source:** 130 resumes across 23 categories × 43 unique job titles. Top-6 SBERT pairing per resume.
+| Category    | Features                                                                              |
+| ----------- | ------------------------------------------------------------------------------------- |
+| Semantic    | embedding_similarity, title_similarity                                                |
+| Lexical     | tfidf_similarity                                                                      |
+| Skill-Based | skill_overlap, weighted_skill_score, num_missing_skills, avg_missing_skill_importance |
+| Structural  | years_of_experience                                                                   |
 
 ---
 
-## Project Structure
+# Methodology Evolution
 
-```
-MLPR_PROJECT/
+| Strategy         | Description                            | F1 Score |
+| ---------------- | -------------------------------------- | -------- |
+| SBERT Baseline   | Semantic retrieval only                | 0.604    |
+| Weak Supervision | Formula-based labels                   | 0.440    |
+| LLM Supervised   | 400 LLM labels                         | 0.704    |
+| Self-Training v1 | Confidence-threshold pseudo-labeling   | 0.564    |
+| Self-Training v2 | Diversified percentile pseudo-labeling | 0.579    |
+| Active Learning  | Uncertainty sampling                   | 0.769    |
+
+### Key Finding
+
+Confidence-based pseudo-labeling reinforced existing decision boundaries and degraded performance, while uncertainty-based active learning improved model discrimination under the same labeling budget.
+
+---
+
+# Leakage Diagnosis
+
+Initial weak-label supervision produced severe leakage:
+
+* Cross-validation F1: **0.99**
+* Held-out test F1: **0.44**
+
+### Root Cause
+
+The same features used to generate heuristic labels were also used during training.
+
+This motivated the transition toward:
+
+* LLM-supervised labeling
+* Independent evaluation
+* Active learning
+
+---
+
+# Dataset
+
+* 2,484 resumes
+* 853 job descriptions
+* 20,253 skill vocabulary entries
+* 50,650 candidate pairs
+
+### Sources
+
+* Kaggle Resume Dataset
+* Public Job Description Corpus
+* ESCO + O*NET Skill Vocabulary
+
+---
+
+# Gold Standard Construction
+
+500 resume–job pairs were labeled independently by:
+
+* Claude
+* GPT
+* Gemini
+
+Final labels were assigned using majority voting.
+
+### Agreement Statistics
+
+* 71% unanimous agreement
+* 80.7% mean pairwise agreement
+* Cohen’s κ = 0.61
+
+---
+
+# Final Results
+
+## Best Active Learning Model
+
+| Metric    | Value |
+| --------- | ----- |
+| F1 Score  | 0.769 |
+| Precision | 0.667 |
+| Recall    | 0.909 |
+
+### Improvement Over Baseline
+
+* +0.165 F1 over SBERT baseline
+
+---
+
+# Ablation Study
+
+| Configuration       | F1 Score |
+| ------------------- | -------- |
+| SBERT Only          | 0.628    |
+| Skill Features Only | 0.706    |
+| Full Hybrid System  | 0.769    |
+
+### Key Insight
+
+Skill-aware structural features contribute independent predictive signal beyond semantic similarity alone.
+
+---
+
+# Repository Structure
+
+```text
+SkillMatch/
+│
 ├── data/
-│   ├── raw/                        # Original input files (excluded from git)
-│   └── processed/                  # Derived datasets (excluded from git)
+│   ├── raw/
+│   ├── processed/
+│   └── gold/
+│
 ├── src/
-│   ├── pipeline.py                 # Step 1–6: cleaning, extraction, pairing, weak labels
-│   ├── upgrade_features.py         # Step 7: add tfidf_similarity + skill_imbalance
-│   ├── create_gold_standard.py     # Sample 100 pairs for human labeling
-│   ├── generate_labels.py          # Write hardcoded gold labels to CSV
-│   ├── merge_gold_standard.py      # Merge labels into gold_standard_final.csv
-│   ├── train_pipeline.py           # Data loading, splitting, scaling utilities
-│   └── evaluate_models.py          # Train, tune thresholds, evaluate on gold set
-├── models/                         # Saved model artifacts (excluded from git)
-│   ├── scaler.pkl
-│   ├── logreg_model.pkl
-│   └── gbm_model.pkl
+│   ├── preprocess_pipeline.py
+│   ├── matching_pipeline.py
+│   ├── build_final_dataset.py
+│   ├── evaluate_models.py
+│   ├── run_ablation_study.py
+│   ├── active_learning.py
+│   └── ...
+│
 ├── outputs/
-│   ├── feature_distributions.png   # Feature histograms
-│   └── feature_importance_final.png # GBM feature importances
+│   ├── feature_importance.png
+│   ├── ablation_results.png
+│   ├── confusion_matrix.png
+│   └── feature_distributions.png
+│
+├── docs/
+│   ├── presentation.pdf
+│   ├── methodology_notes.md
+│   └── literature_review.pdf
+│
+├── README.md
 ├── requirements.txt
-└── README.md
+└── .gitignore
 ```
 
 ---
 
-## Setup
+# Running the Project
+
+## 1. Preprocess Data
 
 ```bash
-pip install -r requirements.txt
+python preprocess_pipeline.py
 ```
 
----
-
-## Running the Pipeline
-
-All scripts are run from the `src/` directory. The pipeline has a fixed execution order:
+## 2. Generate Candidate Pairs
 
 ```bash
-cd src
+python matching_pipeline.py
+```
 
-# Build the training dataset (SBERT encoding — ~5 min)
-python pipeline.py
+## 3. Build Final Dataset
 
-# Add TF-IDF and skill imbalance features (leakage-safe)
-python upgrade_features.py
+```bash
+python build_final_dataset.py
+```
 
-# One-time: build the gold standard
-python generate_labels.py
-python create_gold_standard.py
-python merge_gold_standard.py
+## 4. Train and Evaluate Models
 
-# Train models, tune thresholds, evaluate on gold set, save artifacts
+```bash
 python evaluate_models.py
 ```
 
-To re-run evaluation only (models already trained):
+## 5. Run Ablation Study
 
 ```bash
-cd src
-python evaluate_models.py
+python run_ablation_study.py
 ```
 
 ---
 
-## Loading Saved Models
+# Literature Positioning
 
-```python
-import joblib
+Compared to prior resume-matching systems, this project introduces:
 
-scaler = joblib.load("models/scaler.pkl")
-logreg = joblib.load("models/logreg_model.pkl")
-gbm    = joblib.load("models/gbm_model.pkl")
-
-# Features must be in this order:
-# [semantic_similarity, tfidf_similarity, num_resume_skills, num_job_skills, skill_imbalance]
-X_scaled     = scaler.transform(X_new)
-predictions  = gbm.predict(X_scaled)
-```
+* Independent leakage diagnosis
+* Multi-LLM consensus labeling
+* Active learning under fixed label budget
+* Empirical self-training failure analysis
+* Hybrid reranking beyond semantic retrieval
 
 ---
 
-## Requirements
+# Limitations
+
+* Gold labels are LLM-generated, not recruiter-generated
+* Test set size remains limited
+* English-only and IT-heavy corpus
+* Real-world deployment not yet validated
+* Bias and fairness auditing not yet performed
+
+---
+
+# Future Work
+
+* Human recruiter validation
+* Cross-domain transfer evaluation
+* Bias auditing and fairness analysis
+* Real-time deployment pipeline
+* Longitudinal recommendation tracking
+
+---
+
+# Authors
+
+MLPR Endterm Project Team
+Plaksha University — 2026
 
 ```
-pandas
-numpy
-matplotlib
-scikit-learn
-sentence-transformers
-torch
-joblib
 ```
