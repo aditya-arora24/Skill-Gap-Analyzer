@@ -257,6 +257,7 @@ Compared to prior resume-matching systems, this project introduces:
 ---
 
 # Authors
+Aditya Arora | Reya Saigal | Kuhuk Katiyar
 
 MLPR Endterm Project Team
 Plaksha University — 2026
