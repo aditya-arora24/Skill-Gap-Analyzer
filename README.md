@@ -3,9 +3,10 @@
 
 > MLPR Endterm Project — Plaksha University (2026)
 
+
 A hybrid retrieval-and-reranking machine learning pipeline for resume–job matching using semantic similarity, lexical similarity, ESCO-grounded skill reasoning, and active learning.
 
----
+----
 
 # Project Overview
 
