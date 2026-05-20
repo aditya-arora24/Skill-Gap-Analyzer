@@ -6,7 +6,13 @@
 
 A hybrid retrieval-and-reranking machine learning pipeline for resume–job matching using semantic similarity, lexical similarity, ESCO-grounded skill reasoning, and active learning.
 
+<<<<<<< HEAD
 ----
+=======
+
+---
+>>>>>>> 2211a06 (first contribution)
+
 
 # Project Overview
 
